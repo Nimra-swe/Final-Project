@@ -9,7 +9,7 @@ nav{
     line-height: 75px;
     padding: 0px 100px;
     position: fixed;
-    background-color: burlywood;
+    background-color: #7bd4fa;
     position: sticky;
 }
 nav .logo img{
@@ -27,7 +27,7 @@ nav li{
 nav li a{
     font-size: 18px;
     padding: 0px 30px;
-    color: brown;
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 nav li a:hover{
@@ -50,97 +50,171 @@ nav li a:hover{
   margin-right: 15px;
 
 }
-.hero .heroimg{
-  text-align: center;
-  position: relative;
-  margin: auto;
-}
-.hero .heroimg img{
+.hero img{
+  background-repeat: no-repeat;
   height: 400px;
   height: 400px;
   margin-top: 50px;
-  border-radius: 5px;
-
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-right: 20px;
 }
-.hero .heroText button{
-  margin: 70px;
-  background-color: burlywood;
-  border-radius: 10px;
-  height: 40px;
-  width: 80px;
+button {
+  margin-top: 60px;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #008eca, #ff5922);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background: linear-gradient(135deg, #4d4c4c, #062d3d);
 }
 .hero .heroText button:hover{
   color: blueviolet;
   background-color: black;
 }
-#para{
+#para img{
   height: 400px;
-  width: 100%;
   background-color: cadetblue;
-  background-image: url("/dark\ background\ img.jpg");
-  margin-top: 20px;
+  background-repeat: no-repeat;
+  width: 100%;
+  
 }
 #para p{
-  color: white;
-  padding-top: 150px;
-  text-align: center;
-  font-size: 15px;
+  color: rgb(0, 0, 0);
+  position: relative;
+  top: -250px;
+  left: 350px;
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .gallery-heading{
   font-size: 35px;
   text-align: center;
+  background-color: #7bd4fa;
+  margin-bottom: 30px;
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-left: 140px;
+  
 }
 .cards img{
-  height: 150px;
-  width: 195px;
+  height: 230px;
+  width: 250px;
   border-radius: 5px 5px 0px 0px;
 }
 .cards{
   border: 2px solid black;
-  height: 230px;
-  width:200px;
+  height: 300px;
+  width:254px;
   border-radius: 5px;
-  margin-left: 40px;
+  margin-left: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #7bd4fa;
+
+
 }
 .card-container{
   display: flex;
   flex-wrap: wrap;
-  gap: 100px;
+  justify-content: center;
+
+  gap: 10px;
 }
 .cards p{
   padding-left: 3px;
 }
-table,th,td{
-  width: 500px;
-  margin: auto;
-  font-size: 20px;
-  padding: 20px;
-  text-align: center;
-  border: 2px solid black;
-  border-collapse: collapse;
+
+.site {
+    font-family: Arial, sans-serif;
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin-top: 70px;
 }
-.site{
-  margin-top: 20px;
+
+.site table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
 }
-.grid{
-  height: 100px;
+
+.site th, .site td {
+    padding: 30px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.site th {
+    background-color: #7bd4fa;
+    color: #333;
+}
+
+.site td {
+    background-color: #fff;
+    color: #666;
+}
+
+.site tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Custom styling for specific cells or columns */
+.site td:nth-child(2),
+.site td:nth-child(5) {
+    text-align: left;
+}
+
+.site td:nth-child(3),
+.site td:nth-child(4) {
+    text-align: left;
+}
+
+/* Responsive design */
+@media only screen and (max-width: 600px) {
+    .site {
+        width: 100%;
+    }
+}
+
+.Copyright_text{
+  height: 70px;
   width: 100%;
-  background-color: gray;
-  margin-top: 15px;
+  background-color: #7bd4fa;
+  padding-top: 20px;
 }
 .annual{
   text-align: center;
-  color: aliceblue;
+  color: rgb(255, 255, 255);
   margin-top: -20px;
+  letter-spacing: 2px;
 }
 .dot{
   float: right;
   padding-right: 250px;
-  color: aliceblue;
+  color: rgb(255, 255, 255);
   margin-top: -20px;
 }
-.grid svg{
-  color: white;
+.Copyright_text i{
+  color: rgb(0, 0, 0);
   margin-left: 150px;
-  margin-top: 30px;
+  font-size: 30px;
+}
+.Copyright_text i:hover{
+  color: rgb(35, 133, 133);
+}
+i{
+  color: #000000;
 }
